@@ -1,0 +1,23 @@
+.footer-wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  height: 300px;
+  padding-top: 2%;
+  background-color: var(--color-main);
+  * {
+    font-size: 20px;
+  }
+  p {
+    color: var(--color-sub);
+    margin: 10px 0;
+  }
+  li {
+    cursor: pointer;
+    color: white;
+    margin: 10px 0;
+    &:hover {
+      color: var(--color-sub);
+    }
+  }
+}

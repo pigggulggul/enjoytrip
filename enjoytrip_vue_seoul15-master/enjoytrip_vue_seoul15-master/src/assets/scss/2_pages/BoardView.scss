@@ -1,0 +1,80 @@
+.boardlist-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .boardlist-title-wrap {
+    > h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 40px 0;
+    }
+  }
+  .boardlist-content-wrap {
+    width: 70%;
+    .boardlist-search-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .write-btn-wrap {
+        .write-post {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > p {
+            font-size: 16px;
+            margin: 0 6px;
+          }
+        }
+      }
+      .search-form-wrap {
+        > form {
+          display: flex;
+          > div {
+            display: flex;
+            > input {
+              margin: 0 16px;
+              padding-left: 20px;
+              width: 240px;
+              color: gray;
+              border-color: gray;
+            }
+            > .search-post {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              > p {
+                font-size: 16px;
+                margin: 0 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .boardlist-wrap .boardlist-content-wrap .boardlist-search-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .search-form-wrap > form {
+      flex-direction: column;
+      select {
+        height: 60px;
+      }
+      > div {
+        flex-direction: column;
+        align-items: center;
+        input,
+        button {
+          margin: 10px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+}

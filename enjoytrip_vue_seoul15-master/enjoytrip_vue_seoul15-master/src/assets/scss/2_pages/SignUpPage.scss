@@ -1,0 +1,82 @@
+.accountpage {
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  .signup-img {
+    width: 25%;
+    height: 80%;
+    background-image: url("/src/assets/images/signup-bg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .signup-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 80%;
+    padding: 40px;
+    background-color: var(--color-sub);
+    > .title {
+      margin: 20px 0;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .accounttitle {
+      font-weight: 500;
+      margin: 10px 0;
+    }
+    .accountinput {
+      padding: 10px;
+      border-radius: 5px;
+    }
+    > .titlewrap {
+      display: flex;
+      align-items: center;
+      .titlered {
+        color: red;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 2px;
+      }
+    }
+    .emailwrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .accountinput {
+      }
+      > p {
+        margin: 0 10px;
+      }
+    }
+    .btn {
+      position: relative;
+      display: block;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 80%;
+      font-weight: 700;
+      transition: 0.4s ease all;
+      p {
+        margin: 0;
+      }
+    }
+
+    .btn-main {
+      background-color: var(--color-main);
+      border: 1px solid var(--color-main);
+      color: white;
+      &:hover {
+        background-color: white;
+        color: var(--color-main);
+        border: 1px solid white;
+      }
+    }
+  }
+}

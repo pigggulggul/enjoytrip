@@ -1,0 +1,40 @@
+.board-write-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .board-write-id-wrap {
+    color: var(--color-navy-1);
+    > .form-control {
+      padding: 16px;
+      border: 0;
+      background-color: #eee;
+      margin: 20px 0;
+    }
+  }
+  .board-write-title-wrap {
+    color: var(--color-navy-1);
+    > .form-control {
+      width: 360px;
+      height: 40px;
+      padding: 16px;
+      background-color: #eee;
+      border: 0;
+      border-radius: 10px;
+    }
+  }
+  .board-write-content-wrap {
+    margin: 10px 0;
+    > textarea {
+      width: 100%;
+    }
+  }
+  .board-write-btn-wrap {
+    display: flex;
+    justify-content: end;
+    > button {
+      margin: 10px;
+    }
+  }
+}

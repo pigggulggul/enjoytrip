@@ -1,0 +1,76 @@
+.map-route {
+  > li {
+    &:nth-child(1) {
+      .map-route-sub {
+        a {
+          border: 1px solid #ff0060;
+          color: #ff0060;
+          &:hover {
+            background-color: #ff0060;
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .map-route-sub {
+        a {
+          border: 1px solid #fa7100;
+          color: #fa7100;
+          &:hover {
+            background-color: #fa7100;
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .map-route-sub {
+        a {
+          border: 1px solid #00dfa2;
+          color: #00dfa2;
+          &:hover {
+            background-color: #00dfa2;
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      .map-route-sub {
+        a {
+          border: 1px solid #0079ff;
+          color: #0079ff;
+          &:hover {
+            background-color: #0079ff;
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(5) {
+      .map-route-sub {
+        a {
+          border: 1px solid #27005d;
+          color: #27005d;
+          &:hover {
+            background-color: #27005d;
+            color: white;
+          }
+        }
+      }
+    }
+    &:nth-child(6) {
+      .map-route-sub {
+        a {
+          border: 1px solid #3f1d38;
+          color: #3f1d38;
+          &:hover {
+            background-color: #3f1d38;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

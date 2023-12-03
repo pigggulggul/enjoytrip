@@ -1,0 +1,135 @@
+//상단 버튼
+div .inner .attract-top-bg > .simple-search-bottom {
+  width: 80%;
+  left: 7%;
+  bottom: 40px;
+  margin: 0;
+}
+
+//////////////하단 버튼////////////////
+.simple-search-bottom {
+  position: fixed;
+  display: block;
+  width: 70%;
+  bottom: 10px;
+  left: 12%;
+  z-index: 1;
+}
+.search-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  > li {
+    > p {
+      margin-bottom: 10px;
+    }
+  }
+  .search-sido-wrap,
+  .search-gugun-wrap,
+  .search-type-wrap,
+  .search-keyword-wrap {
+    font-size: 14px;
+    input,
+    select {
+      padding: 6px 10px;
+      border: none;
+    }
+    input {
+      margin: 0 4px;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .search-sido-wrap {
+    width: 30%;
+    .search-sido {
+    }
+  }
+  .search-gugun-wrap {
+    width: 30%;
+    .search-gugun {
+    }
+  }
+  .search-type-wrap {
+    width: 30%;
+    .search-date {
+    }
+  }
+  .search-keyword-wrap {
+    > input {
+      width: 100px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    margin-right: 10px;
+  }
+  .search-btn-wrap {
+    width: 10%;
+    .search-btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+      background-color: var(--color-main);
+      border: solid 2px var(--color-main);
+      color: white;
+      &:hover {
+        background-color: rgb(35, 174, 230);
+        border: solid 2px rgb(35, 174, 230);
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  div .inner .attract-top-bg > .simple-search-bottom {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .simple-search-bottom {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    .search-wrap {
+      width: 100%;
+      padding: 10px;
+      > li {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        > p {
+          display: none;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+    .search-btn-wrap {
+      width: 30%;
+      padding: 0;
+      .search-btn {
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .simple-search-bottom {
+  }
+}
